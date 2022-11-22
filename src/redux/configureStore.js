@@ -4,6 +4,7 @@ import postSlice from './HomeSlice';
 const store = configureStore({
  reducer:{
   posts: postSlice,
+  
  }
  });
 
