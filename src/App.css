@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +7,147 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: #f5f5f5;
 }
 
-.home-container {
+.links {
+  text-decoration: none;
+  color: #fff;
+}
+
+.categories {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
+.eiffel-head,
+.burj-head {
+  font-size: 20px;
+}
+
+.eiffel-tower,
+.burj-khalifa {
+  font-size: 25px;
+}
+
+.home-container {
+  background-color: #ec4c8a;
+  display: grid;
+  border: 1px solid #000;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.home-image {
+  border-radius: 6px;
+  width: -webkit-fill-available;
+}
+
+.posts-container {
+  padding: 15px;
+  border: 1px solid #000;
+}
+
 .title {
-  
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-tag {
+  background-color: #eceff1;
+  text-transform: capitalize !important;
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+
+.btn-rounded {
+  border-radius: 15rem;
+}
+
+.news {
+  color: white;
+}
+
+.right-arrow {
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+Button {
+  margin: 10px;
+}
+
+.post-image2 {
+  display: flex;
+}
+
+.post-image {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-information {
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  font-size: 15px;
+}
+
+.post-content {
+  padding: 2.5rem 22px;
+  font-size: 20px;
+}
+
+.arrow-left {
+  color: #000;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.title-post {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr;
+    min-width: 426px;
+  }
+  .posts-container {
+  }
+  .home-image {
+    width: 200px;
+  }
+  .post-image {
+    width: 360px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  .title-post {
+    font-size: 25px;
+  }
+  .post-content {
+    font-size: 20px;
+  }
+  .categories {
+    display: flex;
+  }
 }
