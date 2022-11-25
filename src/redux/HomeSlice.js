@@ -1,57 +1,58 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+/* eslint-disable no-param-reassign */
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
-  const response = await fetch("https://inshorts.deta.dev/news?category=all");
+export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
+  const response = await fetch('https://inshorts.deta.dev/news?category=all');
   const data = await response.json();
   return data;
 });
 
 export const educationPosts = createAsyncThunk(
-  "posts/educationPosts",
+  'posts/educationPosts',
   async () => {
     const response = await fetch(
-      "https://inshorts.deta.dev/news?category=education"
+      'https://inshorts.deta.dev/news?category=education',
     );
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 export const sciencePosts = createAsyncThunk(
-  "posts/sciencePosts",
+  'posts/sciencePosts',
   async () => {
     const response = await fetch(
-      "https://inshorts.deta.dev/news?category=science"
+      'https://inshorts.deta.dev/news?category=science',
     );
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 export const healthPosts = createAsyncThunk(
-  "posts/healthPosts",
+  'posts/healthPosts',
   async () => {
     const response = await fetch(
-      "https://inshorts.deta.dev/news?category=health"
+      'https://inshorts.deta.dev/news?category=health',
     );
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 export const techPosts = createAsyncThunk(
-  "posts/techPosts",
+  'posts/techPosts',
   async () => {
     const response = await fetch(
-      "https://inshorts.deta.dev/news?category=technology"
+      'https://inshorts.deta.dev/news?category=technology',
     );
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 const postSlice = createSlice({
-  name: "posts",
+  name: 'posts',
   initialState: {
     posts: [],
     status: null,
@@ -63,75 +64,61 @@ const postSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchPosts.pending, (state) => {
-        state.status = "loading";
+        state.status = 'loading';
       })
       .addCase(fetchPosts.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = 'succeeded';
         state.posts = action.payload;
       })
       .addCase(fetchPosts.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = 'failed';
         state.error = action.error.message;
       })
       .addCase(educationPosts.pending, (state) => {
-        state.status = "loading";
-      }
-      )
+        state.status = 'loading';
+      })
       .addCase(educationPosts.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = 'succeeded';
         state.posts = action.payload;
-      }
-      )
+      })
       .addCase(educationPosts.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = 'failed';
         state.error = action.error.message;
-      }
-      )
+      })
       .addCase(sciencePosts.pending, (state) => {
-        state.status = "loading";
-      }
-      )
+        state.status = 'loading';
+      })
       .addCase(sciencePosts.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = 'succeeded';
         state.posts = action.payload;
-      }
-      )
+      })
       .addCase(sciencePosts.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = 'failed';
         state.error = action.error.message;
-      }
-      )
+      })
       .addCase(healthPosts.pending, (state) => {
-        state.status = "loading";
-      }
-      )
+        state.status = 'loading';
+      })
       .addCase(healthPosts.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = 'succeeded';
         state.posts = action.payload;
-      }
-      )
+      })
       .addCase(healthPosts.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = 'failed';
         state.error = action.error.message;
-      }
-      )
+      })
       .addCase(techPosts.pending, (state) => {
-        state.status = "loading";
-      }
-      )
+        state.status = 'loading';
+      })
       .addCase(techPosts.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = 'succeeded';
         state.posts = action.payload;
-      }
-      )
+      })
       .addCase(techPosts.rejected, (state, action) => {
-        state.status = "failed";
+        state.status = 'failed';
         state.error = action.error.message;
-      }
-      );
-
+      });
   },
 });
-
 
 export default postSlice.reducer;
