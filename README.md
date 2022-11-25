@@ -22,13 +22,9 @@ This is an app that lets you read all trending News from all around the world re
 - Gitflow
 - Linters Check
 
-## Website Preview
-
-![Preview]()
-
 ## Live Demo
 
-Please use this [link]()
+Please use this [link](https://capstone-project-g48w4j4mo-maxwell011.vercel.app/)
 
 ## Video Presentation
 
