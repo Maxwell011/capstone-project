@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const Posts = ({ post }) => {
-  const { title, author, id, imageUrl } = post;
+  const { id, imageUrl, title } = post;
   return (
     <div className='posts-container'>
       <img

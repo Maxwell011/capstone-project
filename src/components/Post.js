@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
 const Post = () => {
