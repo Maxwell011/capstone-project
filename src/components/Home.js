@@ -3,14 +3,18 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import BackgroundSlide from './Background';
 import {
-  fetchPosts, educationPosts, sciencePosts, healthPosts, techPosts,
+  fetchPosts,
+  educationPosts,
+  sciencePosts,
+  healthPosts,
+  techPosts,
 } from '../redux/HomeSlice';
 import Posts from './Posts';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { posts } = useSelector((state) => state.posts);
 
+  const { posts } = useSelector((state) => state.posts);
   useEffect(() => {
     dispatch(fetchPosts());
   }, [dispatch]);
@@ -75,7 +79,6 @@ const Home = () => {
           Technology
         </Button>
       </div>
-
       <div className="home-container">
         {posts?.data?.map((post) => (
           <Posts key={post.id} post={post} />

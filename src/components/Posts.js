@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
@@ -26,6 +27,14 @@ const Posts = ({ post }) => {
       <h2 className="title">{title}</h2>
     </div>
   );
+};
+
+Posts.propTypes = {
+  post: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Posts;

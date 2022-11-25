@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
@@ -40,13 +41,12 @@ body {
 
 .home-image {
   border-radius: 6px;
-  width: -webkit-fill-available;
 }
 
 .posts-container {
   padding: 15px;
   background-color: #35548e;
-  border: #35548E 1px solid;
+  border: #35548e 1px solid;
 }
 
 .title {
@@ -84,7 +84,7 @@ body {
   justify-content: center;
 }
 
-Button {
+button {
   margin: 10px;
 }
 
@@ -130,18 +130,21 @@ Button {
     grid-template-columns: 1fr;
     min-width: 426px;
   }
+
   .post-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
+
   .post-information {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 0 0 17px;
   }
+
   .right-arrow {
     display: flex;
     margin-left: 15rem;
@@ -149,40 +152,51 @@ Button {
     align-items: center;
     justify-content: center;
   }
+
   .home-image {
     width: 200px;
   }
+
   .post-image {
     width: 360px;
     padding-left: 10px;
     margin-left: 10px;
   }
+
   .title-post {
     font-size: 17px;
     padding: 0 0 0 17px;
   }
+
   .post-content {
     font-size: 18px;
   }
+
   .categories {
     display: flex;
   }
+
   .article {
     font-size: 12px;
   }
+
   .title {
     font-size: 1.1rem;
     margin: 0 5px 0 0;
   }
+
   .eiffer-head {
     font-size: 12px;
   }
+
   .eiffel-tower {
     font-size: 12px;
   }
+
   .burj-head {
     font-size: 12px;
   }
+
   .burj-khalifa {
     font-size: 12px;
   }
