@@ -32,9 +32,8 @@ body {
 }
 
 .home-container {
-  background-color: #ec4c8a;
+  background-color: #4269b2;
   display: grid;
-  border: 1px solid #000;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
@@ -46,7 +45,8 @@ body {
 
 .posts-container {
   padding: 15px;
-  border: 1px solid #000;
+  background-color: #35548e;
+  border: #35548E 1px solid;
 }
 
 .title {
@@ -127,11 +127,27 @@ Button {
 
 @media screen and (max-width: 768px) {
   .home-container {
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: 1fr;
     min-width: 426px;
   }
-  .posts-container {
+  .post-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .post-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 17px;
+  }
+  .right-arrow {
+    display: flex;
+    margin-left: 15rem;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
   }
   .home-image {
     width: 200px;
@@ -142,12 +158,32 @@ Button {
     margin-left: 10px;
   }
   .title-post {
-    font-size: 25px;
+    font-size: 17px;
+    padding: 0 0 0 17px;
   }
   .post-content {
-    font-size: 20px;
+    font-size: 18px;
   }
   .categories {
     display: flex;
+  }
+  .article {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 1.1rem;
+    margin: 0 5px 0 0;
+  }
+  .eiffer-head {
+    font-size: 12px;
+  }
+  .eiffel-tower {
+    font-size: 12px;
+  }
+  .burj-head {
+    font-size: 12px;
+  }
+  .burj-khalifa {
+    font-size: 12px;
   }
 }
