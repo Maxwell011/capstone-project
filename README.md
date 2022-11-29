@@ -1,70 +1,212 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="left">
+  ![]()
+</div>
 
-## Available Scripts
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-In the project directory, you can run:
+Modify this file to match your project and remove sections that don't apply.
 
-### `npm start`
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
+-->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
 
-### `npm test`
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <h3><b>Microverse README Template</b></h3>
 
-### `npm run build`
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TABLE OF CONTENTS -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 📗 Table of Contents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-### `npm run eject`
+<!-- PROJECT DESCRIPTION -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 📖 [NEWS VILE] <a name="about-project"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> **[NEWS VILE]**
+> This is an app that lets you read all trending News from all around the world relating to all the different topics and interest.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠 Built With <a name="built-with">React, Redux</a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Tech Stack <a name="tech-stack"></a>
 
-## Learn More
+>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Features -->
 
-### Code Splitting
+### Key Features <a name="key-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **[Snapshot of the details]**
+- **[unique UI/UX incorparating material ui features]**
+- **[Use of latest React router features]**
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- LIVE DEMO -->
 
-### Making a Progressive Web App
+## 🚀 Live Demo <a name="live-demo"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> Add a link to your deployed project.
 
-### Advanced Configuration
+- [Live Demo Link](https://capstone-project-g48w4j4mo-maxwell011.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Loom video <a name="live-demo"></a>
+
+> A video Explaining The app
+
+- [Loom Video](https://www.loom.com/share/6692f68d07344eab9a3993a07465a6a0)
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Set up your code editor
+
+### Prerequisites
+
+Setup GitHub.
+Install [node](https://nodejs.org/en/)
+Install react app using `npx create=react-app`
+
+### Setup
+
+Remove unnecessary files
+
+##### npm
+
+Install react-router-dom
+install redux
+install react-redux
+install @reduxjs/toolkit
+
+### Usage
+
+To run the project, execute the following command:
+npm start
+
+### Run tests
+
+npm test
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm run build
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- AUTHORS -->
+
+## 👥 Author <a name="authors"></a>
+
+👤 **ORJI MAXWELL**
+
+- GitHub: [@githubhandle](https://github.com/Maxwell011)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemeka-maxwell/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Carousel BackgroundSlide]**
+- [ ] **[Ctegories link]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project create an issue with your comments.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- I would like to thank [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for inspiring the design.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **[How to use createAsyncThunk()]**
+
+  - [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk)
+
+- **[Quicker method to install the project]**
+
+  - [Clone the project and run npm install ]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
