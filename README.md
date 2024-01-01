@@ -113,10 +113,7 @@ Remove unnecessary files
 
 ##### npm
 
-Install react-router-dom
-install redux
-install react-redux
-install @reduxjs/toolkit
+npm install
 
 ### Usage
 
