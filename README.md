@@ -146,7 +146,7 @@ npm run build
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Carousel BackgroundSlide]**
-- [ ] **[Ctegories link]**
+- [ ] **[Categories link]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
